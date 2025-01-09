@@ -1,0 +1,12 @@
+cd stable-diffusion-videos
+C:/Users/Nitrocon/AppData/Local/Programs/Python/Python39/python.exe -m venv venv
+source venv/Scripts/activate
+pip install -r requirements.txt
+python start.py
+
+pip install nuitka
+python -m nuitka --standalone --onefile \
+--module-parameter=torch-disable-jit=no \
+--enable-plugin=no-qt \
+--windows-console-mode=disable \
+start.py

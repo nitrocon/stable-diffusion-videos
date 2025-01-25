@@ -1,3 +1,4 @@
+youtube-dl
 realesrgan
 pillow==10.0
 accelerate
